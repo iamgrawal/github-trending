@@ -1,0 +1,99 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+
+  .inner-cover {
+    height: calc(100vh - 80px);
+    overflow: scroll;
+    background-color: #efefef;
+
+    .action-buttons {
+      margin: 20px 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        width: 60%;
+        margin: 0 24px;
+        padding: 8px;
+        height: 36px;
+      }
+
+      .arrange-functionalities {
+        display: flex;
+        margin-right: 24px;
+
+        div {
+          margin: 0 8px;
+        }
+
+        span {
+          width: 32px;
+          height: 18px;
+          margin: 4px;
+        }
+
+        span:hover {
+          cursor: pointer;
+        }
+      }
+
+    }
+
+    .trending-list {
+      list-style: none;
+      align-items: center;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        display: flex;
+        border: 1px solid #4f4f4f;
+        border-radius: 4px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 40%;
+        margin: 20px auto;
+        margin-left: 5%;
+        background-color: #fff;
+
+        .project-description {
+          font-weight: 300;
+          font-size: 13px;
+          text-align: left;
+        }
+
+        div {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        span {
+          margin-left: 4px;
+        }
+
+        img {
+          height: 18px;
+          width: 18px;
+        }
+
+        h2,
+        p,
+        a,
+        button {
+          margin: 8px;
+        }
+      }
+    }
+  }
+
+  .mastfoot {
+    min-height: 24px;
+
+    p {
+      margin: 0;
+    }
+  }
+}
